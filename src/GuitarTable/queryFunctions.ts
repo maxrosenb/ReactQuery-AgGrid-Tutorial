@@ -1,6 +1,5 @@
-export function getGuitars() {
-  return async () => {
-    const response = await fetch("http://localhost:8000/guitars");
-    return await response.json();
-  };
+export async function getGuitars() {
+  const response = await fetch("http://localhost:8000/guitars");
+  const data = await response.json();
+  return data;
 }
