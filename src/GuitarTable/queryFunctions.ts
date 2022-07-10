@@ -1,6 +1,6 @@
 export async function getGuitars() {
   //sleep for 1 second then return data
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 200));
   const data = [
     {
       brand: "Fender",
